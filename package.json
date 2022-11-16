@@ -14,9 +14,12 @@
     "test:ci": "npm run test -- --colors --coverage --ci",
     "lint": "eslint --ext .ts,.js .",
     "format": "prettier \"./**\" --write --ignore-unknown",
-    "format:check": "prettier \"./**\" --ignore-unknown --check"
+    "format:check": "prettier \"./**\" --ignore-unknown --check",
+    "watch": "tsc --watch",
+    "dev": "nodemon dist/main.js"
   },
   "dependencies": {
+    "canvas": "^2.10.2",
     "dotenv": "^16.0.0",
     "tslib": "^2.3.1"
   },
